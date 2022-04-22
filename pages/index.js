@@ -23,209 +23,185 @@ export default function HomePage() {
       <Head>
         <title>Oakland 2018</title>
       </Head>
-      <h1 className="title">
-        <picture className="title-image" title="Oakland">
-          <source
-            sizes="100vw"
-            media="(max-width: 570px)"
-            srcSet="/images/oak_skinny.svg"
-          />
-          <source sizes="100vw" srcSet="/images/oak_wide.svg" />
-          <img src="/images/oak_wide.svg" />
-        </picture>
-        <span>California</span> <span>2018</span>
-      </h1>
-      <div className="grid">
-        <div className="grid__item">
-          <Image
-            layout="responsive"
-            width={6}
-            height={4}
-            src="/photos/01.jpg"
-          />
+     <body>
+    <div class="container">
+      <h1>Stack</h1>
+      <div class="stack wrapper">
+        <div class="box"></div>
+        <div class="stack wrapper">
+          <div class="box"></div>
+          <div class="box"></div>
         </div>
-        <div className="grid__item--portrait">
-          <p>
-            Since 2016, I’ve created a playlist of music for each month of the
-            year, with corresponding cover art. For 2018’s cover art series, I
-            chose to photograph the street life of Chinatown in Oakland,
-            California, my current home.
-          </p>
-          <p>
-            All images were shot on a Leica Q or Sony α6000 and edited in Adobe
-            Lightroom. For more links to my work, go to{" "}
-            <a href="https://daneden.me">my website</a>.
-          </p>
-          <details>
-            <summary>Links to playlists</summary>
-            <ol>
-              <li>
-                <a href="https://open.spotify.com/user/daneden/playlist/1nX5BEREXXrrGKDJ4GqGF3?si=5tXq6_23SDeftOOspvhtqw">
-                  January
-                </a>
-              </li>
-              <li>
-                <a href="https://open.spotify.com/user/daneden/playlist/379mOZblgm1SHbioWCNN46?si=szhjvwETQ3eyiS-CgL3aXQ">
-                  February
-                </a>
-              </li>
-              <li>
-                <a href="https://open.spotify.com/user/daneden/playlist/4XAA4bwQfZUqL1hk3TnW7f?si=Ee5rcBU3TWu0N-_bUoEIUQ">
-                  March
-                </a>
-              </li>
-              <li>
-                <a href="https://open.spotify.com/user/daneden/playlist/2c4vcs0AWZ8titm0CktPy1?si=mSGWDYX-TpetoZHkj-cMNQ">
-                  April
-                </a>
-              </li>
-              <li>
-                <a href="https://open.spotify.com/user/daneden/playlist/3TlqcpvPkjqpT6F2qe8vJ8?si=uY0uFlwIQzugU6bNaAosaA">
-                  May
-                </a>
-              </li>
-              <li>
-                <a href="https://open.spotify.com/user/daneden/playlist/7j34go4jYfNKbj0bFRvikN?si=Wgoc5GjZSRixTi8p0TF7Uw">
-                  June
-                </a>
-              </li>
-              <li>
-                <a href="https://open.spotify.com/user/daneden/playlist/0yA2yfChFIaWC9uPLQNfsZ?si=nZIamjYxSvq7ATwX0Ls76A">
-                  July
-                </a>
-              </li>
-              <li>
-                <a href="https://open.spotify.com/user/daneden/playlist/0psbWZSL1dVW0pBpQL8SJd?si=G8OS0niXQKuGcQ0BZg7T4A">
-                  August
-                </a>
-              </li>
-              <li>
-                <a href="https://open.spotify.com/user/daneden/playlist/5eiyd0tmNxvUElaUf6B7Yj?si=Q5YSm_RxQuGrIFx0-2OowA">
-                  September
-                </a>
-              </li>
-              <li>
-                <a href="https://open.spotify.com/user/daneden/playlist/6I0zLyj3BRdpb2UnCZk6pp?si=XHw8QP_5QgWNnfeY4yT9zw">
-                  October
-                </a>
-              </li>
-              <li>
-                <a href="https://open.spotify.com/user/daneden/playlist/2gZE8RqP3S94ZczoSwaNaJ?si=zUtPL6dzReGff9O22Zpeyg">
-                  November
-                </a>
-              </li>
-              <li>
-                <a href="https://open.spotify.com/user/daneden/playlist/7gis8Tk9kOhOv4ObYBPySH?si=8AZsQ-2ATbSpKjC1gja0Pg">
-                  December
-                </a>
-              </li>
-              <li>
-                <a href="https://open.spotify.com/user/daneden/playlist/1l8cBeDUZeggj3gBUsMTNs?si=ad_vMF5lQemnKuuRa4jrjQ">
-                  2018
-                </a>
-              </li>
-            </ol>
-          </details>
-        </div>
-        <div className="grid__item">
-          <Image
-            layout="responsive"
-            width={6}
-            height={4}
-            src="/photos/02.jpg"
-          />
-        </div>
-        <div className="grid__item--portrait">
-          <Image
-            layout="responsive"
-            width={4}
-            height={6}
-            src="/photos/03.jpg"
-          />
-        </div>
-        <div className="grid__item--portrait">
-          <Image
-            layout="responsive"
-            width={4}
-            height={6}
-            src="/photos/04.jpg"
-          />
-        </div>
-        <div className="grid__item">
-          <Image
-            layout="responsive"
-            width={6}
-            height={4}
-            src="/photos/05.jpg"
-          />
-        </div>
-        <div className="grid__item--portrait">
-          <Image
-            layout="responsive"
-            width={4}
-            height={6}
-            src="/photos/06.jpg"
-          />
-        </div>
-        <div className="grid__item--portrait">
-          <Image
-            layout="responsive"
-            width={4}
-            height={6}
-            src="/photos/07.jpg"
-          />
-        </div>
-        <div className="grid__item--portrait">
-          <Image
-            layout="responsive"
-            width={4}
-            height={6}
-            src="/photos/08.jpg"
-          />
-        </div>
-        <div className="grid__item">
-          <Image
-            layout="responsive"
-            width={6}
-            height={4}
-            src="/photos/09.jpg"
-          />
-        </div>
-        <div className="grid__item">
-          <Image
-            layout="responsive"
-            width={6}
-            height={4}
-            src="/photos/10.jpg"
-          />
-        </div>
-        <div className="grid__item--portrait">
-          <Image
-            layout="responsive"
-            width={4}
-            height={6}
-            src="/photos/11.jpg"
-          />
-        </div>
-        <div className="grid__item--portrait">
-          <Image
-            layout="responsive"
-            width={4}
-            height={6}
-            src="/photos/12.jpg"
-          />
+        <div class="box"></div>
+      </div>
+
+      <h1>Box</h1>
+      <div class="box">Outpost</div>
+
+      <h1>Center</h1>
+      <div class="center wrapper"></div>
+
+      <h1>Cluster</h1>
+      <div class="cluster">
+        <!-- intermediary wrapper -->
+        <div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
         </div>
       </div>
-      <style jsx>{`
-        :global(img:not([src$=".svg"])) {
-          background-color: rgba(128, 128, 128, 0.1);
+
+      <h1>Sidebar</h1>
+      <div class="sidebar">
+        <!-- intermediary wrapper -->
+        <div>
+          <div class="box"></div>
+          <div class="box"></div>
+        </div>
+      </div>
+
+      <h1>Switcher</h1>
+      <div class="switcher">
+        <!-- intermediary wrapper -->
+        <div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+        </div>
+      </div>
+
+      <h1>Cover</h1>
+      <div class="cover box">
+        <!-- header -->
+        <div>
+          Header
+        </div>
+        <!-- centered element -->
+        <h2 style="text-align: center;">Cover Element</h2>
+        <!-- footer -->
+        <div>
+          Footer
+        </div>
+      </div>
+
+      <h1>Grid</h1>
+      <div class="grid" data-min="15rem">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+
+      <h1>Frame</h1>
+
+      <h2>16:9</h2>
+      <div class="frame frame916">
+        <div class="box">16:9</div>
+      </div>
+
+      <h2>4:3</h2>
+      <div class="frame frame43">
+        <div class="box">4:3</div>
+      </div>
+
+      <h2>1:1</h2>
+      <div class="frame frame-square">
+        <div class="box">1:1</div>
+      </div>
+
+      <h1>Reel</h1>
+      <div class="reel">
+        <div class="box" style="height: 20em; width: 20em;"></div>
+        <div class="box" style="height: 20em; width: 20em;"></div>
+        <div class="box" style="height: 20em; width: 20em;"></div>
+        <div class="box" style="height: 20em; width: 20em;"></div>
+        <div class="box" style="height: 20em; width: 20em;"></div>
+        <div class="box" style="height: 20em; width: 20em;"></div>
+        <div class="box" style="height: 20em; width: 20em;"></div>
+        <div class="box" style="height: 20em; width: 20em;"></div>
+        <div class="box" style="height: 20em; width: 20em;"></div>
+        <div class="box" style="height: 20em; width: 20em;"></div>
+      </div>
+    </div>
+
+    <script>
+      /* The Grid
+      -----------------------------------------------------------------------*/
+      (function observeGrid() {
+        const gridNode = document.querySelector('.grid');
+        // Feature detect ResizeObserver
+        if ('ResizeObserver' in window) {
+          // Get the min value from data-min="[min]"
+          const min = gridNode.dataset.min;
+
+          // Create a proxy element to measure and convert
+          // the `min` value (which might be em, rem, etc) to `px`
+          const test = document.createElement('div');
+          test.style.width = min;
+          gridNode.appendChild(test);
+          const minToPixels = test.offsetWidth;
+          gridNode.removeChild(test);
+
+          const ro = new ResizeObserver((entries) => {
+            for (let entry of entries) {
+              // Get the element's current dimensions
+              const cr = entry.contentRect;
+              // `true` if the container is wider than the minimum
+              const isWide = cr.width > minToPixels;
+              // toggle the class conditionally
+              gridNode.classList.toggle('aboveMin', isWide);
+            }
+          });
+
+          ro.observe(gridNode);
         }
-      `}</style>
-      <style jsx>{`
-        .title {
-          transform: translate3d(0, ${offset / 2}px, 0);
+      })();
+
+      /* The Reel
+      -----------------------------------------------------------------------*/
+      (function() {
+        const className = 'reel';
+        const reels = Array.from(document.querySelectorAll(`.${className}`));
+        const toggleOverflowClass = (elem) => {
+          elem.classList.toggle('overflowing', elem.scrollWidth > elem.clientWidth);
+        };
+
+        for (let reel of reels) {
+          if ('ResizeObserver' in window) {
+            new ResizeObserver((entries) => {
+              toggleOverflowClass(entries[0].target);
+            }).observe(reel);
+          }
+
+          if ('MutationObserver' in window) {
+            new MutationObserver((entries) => {
+              toggleOverflowClass(entries[0].target);
+            }).observe(reel, { childList: true });
+          }
         }
-      `}</style>
+      })();
+    </script>
+  </body>
     </>
   )
 }
